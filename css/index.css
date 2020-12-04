@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  margin: 0%;
+  background-color: #f4f4f4;
+  /* background-image: url(https://www.jerrysartarama.com/images/stretched-canvas-program/600x600/Claessens-112_V18422_swatch-1.jpg); */
+}
+
+/* Welcome Page With Featured Photo Carousel and Enter Main Page Button */
+
+.carousel-item {
+  max-height: 600px;
+  text-align: center;
+  padding: 7% 20%;
+}
+
+/* .carousel-control-prev-icon {
+  margin-top: 100px;
+}
+
+.carousel-control-next-icon {
+  margin-top: 100px;
+} */
+
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+#enterVernacular {
+  margin: 75px auto 0 auto;
+  text-align: center;
+}
+
