@@ -1,36 +1,35 @@
-.bodyContainer {
-  position: relative;
-  margin-bottom: 100px;
-}
-
-.content-wrap {
-  position: relative;
-  padding-bottom: 100px;
-}
-
-.featuredPhotoCarousel {
-  padding-top: 20px;
-}
-
 body {
-  text-align: center;
-  margin: 0;
-  background-color: #f4f4f4;
-  /* background-image: url(https://www.jerrysartarama.com/images/stretched-canvas-program/600x600/Claessens-112_V18422_swatch-1.jpg); */
+  background-color: #faf7f2 !important;
 }
 
 .navbar-brand {
   font-family: "Crimson Text", serif;
+  font-size: 2rem !important;
 }
 
 .nav-item {
   font-family: "Raleway", sans-serif;
+  font-size: 1rem !important;
 }
 
 /* Welcome Page With Featured Photo Carousel and Enter Main Page Button */
 
-.img-wrapper {
-  position: relative;
+@media screen and (max-width: 2000px) {
+  .content-wrap {
+    margin: 50px 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content-wrap {
+    margin: 150px 0 !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content-wrap {
+    margin: 200px 0 !important;
+  }
 }
 
 .img-responsive {
@@ -53,57 +52,48 @@ body {
   height: 50%;
 }
 
+@media screen and (max-width: 2000px) {
+  .explore-button {
+    font-size: 1.8rem !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .explore-button {
+    font-size: 1rem !important;
+    padding-bottom: 5px !important;
+  }
+}
+
 /* Footer */
 
 #footer {
-  /* position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px; */
   text-align: center;
 }
 
 .bottom-container {
-  padding-top: 3.75rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 0px auto;
+  height: 20px;
 }
 
 .copywriteSignature {
   font-size: 12px;
-  padding: 0;
-  margin: 0;
 }
 
 .instagramIcon {
-  font-size: 1.437rem;
+  font-size: 1.3rem;
   color: black;
-  padding: 1.8rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  margin: auto;
 }
 
 .instagramIcon:hover {
   color: black;
   cursor: pointer;
   text-decoration: none;
-}
-
-.kickstarterIcon {
-  font-size: 1.437rem;
-  color: black;
-  padding: 1.8rem;
-}
-
-.kickstarterIcon:hover {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.mainContentContainer {
-  position: relative;
-  min-width: 100vh;
-}
-
-.content-wrap {
-  padding-bottom: 15rem;
 }

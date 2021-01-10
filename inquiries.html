@@ -19,7 +19,7 @@
 <body>
     
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="mainPage.html">V<sup>ernacular</sup></a>
+    <a class="navbar-brand" href="index.html">V<sup>ernacular</sup></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link"  href="aboutUs.html">About Us <span class="sr-only">(current)</span></a>
+          <a class="nav-link"  href="about.html">About<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link"  href="inquiries.html">Inquiries</a>
@@ -36,7 +36,7 @@
             <a class="nav-link"  href="donate.html">Donate</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link"  href="preorder.html">Preorder</a>
+            <a class="nav-link"  href="order.html">Order</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link"  href="submissions.html">Submissions</a>
@@ -48,28 +48,36 @@
 
 <div class="bodyContainer">
   <div class="content-wrap">
-    <div class="SubmissionFormContainer">
-      <form  action="mailto:arielzilist@gmail.com" method="POST" enctype="text/plain">
+    <div class="container"> 
+
+    
+    
+    <div class="formTitle">
+      <h1 class="formHeader">Inquiries</h1>
+      </div>
+      <div class="formContainer">
+        <form  action="mailto:arielzilist@gmail.com" method="POST" enctype="text/plain">
       
-          <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="John Doe">
+          <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="Jane Doe">
           <br>
         
           <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="name@example.com">
           <br>
           
-          <textarea name="message" class="form-control" id="messageTextArea" rows="4" placeholder="Type any message or questions you have for the Vernacular Mag team here"></textarea>
+          <textarea name="message" class="form-control" id="messageTextArea" rows="4" placeholder="Type any message or questions you have for the Vernacular Mag team here..."></textarea>
           <br>
           
           <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit">
+          
 
-      </form>
-  </div>
+        </form>
+      </div>
 
-
-
-    
+    </div>
   </div>
 </div>
+
+
 
 
       
@@ -78,9 +86,10 @@
     <div id="footer">
       <div class="bottom-container">
         <a class="fab fa-instagram instagramIcon" href="https://www.instagram.com/vernacular_magazine/" target="_blank"></a>
-        <a class="fab fa-kickstarter-k kickstarterIcon" href="https://www.kickstarter.com/projects/vernacularmagchi/vernacular-issue-01" target="_blank"  ></a> 
         <p class="copywriteSignature">© 2020 Designed by Ariel Zilist</p>
     </div>
-     
+
+    
+    <script src="js/index.js"></script>
  </body>
  </html>

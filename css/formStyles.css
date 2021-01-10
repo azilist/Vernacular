@@ -1,23 +1,69 @@
+.content-wrap {
+  margin-top: 50px !important;
+}
 
-
-.SubmissionFormContainer {
-  max-width: 400px;
-  margin: 75px auto 0;
+.formContainer {
+  max-width: 600px;
+  margin: 50px auto 10px;
   line-height: 0.8rem;
   font-family: "Raleway", sans-serif;
 }
 
+@media screen and (max-width: 2000px) {
+  .headerDescription {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .headerDescription {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .formHeader {
+    text-align: center;
+    font-family: "Crimson", serif;
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .formHeader {
+    text-align: center;
+    font-family: "Crimson", serif;
+    font-size: 5.7rem !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formHeader {
+    text-align: center;
+    font-family: "Crimson", serif;
+    font-size: 4.8rem !important;
+  }
+}
+
 .smallTextBox {
-  width: 400px;
+  width: 600px;
 }
 
 .textBox {
-  width: 400px;
+  width: 600px;
   height: 150px;
+}
+
+.form-check-label {
+  line-height: 1.5;
 }
 
 .SubmitButton {
   margin-top: 30px;
+}
+.SubmitButton:hover {
+  background-color: #8d97a1;
 }
 
 .choose-file-button {
@@ -26,7 +72,7 @@
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #f4f4f4;
   background-clip: padding-box;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

@@ -1,0 +1,22 @@
+.themeDefinition {
+  font-size: 1rem;
+}
+
+.submissionGuidelinesContainer {
+  font-family: "Raleway", sans-serif;
+  padding: 60px 0;
+}
+
+.formSubheader {
+  font-family: "Crimson Text", serif;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.themeContainer {
+  padding: 10px 0 50px;
+}
+
+ol {
+  line-height: 1.5;
+}

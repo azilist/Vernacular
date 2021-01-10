@@ -7,7 +7,7 @@
     <link rel="icon" href="css/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/formStyles.css">
-    <link rel="stylesheet" href="submissions.css">
+    <link rel="stylesheet" href="css/submissions.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 <body>
     
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="mainPage.html">V<sup>ernacular</sup></a>
+    <a class="navbar-brand" href="index.html">V<sup>ernacular</sup></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,7 +27,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link"  href="aboutUs.html">About Us <span class="sr-only">(current)</span></a>
+          <a class="nav-link"  href="about.html">About<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link"  href="inquiries.html">Inquiries</a>
@@ -36,7 +36,7 @@
             <a class="nav-link"  href="donate.html">Donate</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link"  href="preorder.html">Preorder</a>
+            <a class="nav-link"  href="order.html">Order</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link"  href="submissions.html">Submissions</a>
@@ -48,46 +48,134 @@
 
 <div class="bodyContainer">
   <div class="content-wrap">
-    <div class="SubmissionFormContainer">
-      <form  action="mailto:arielzilist@gmail.com" method="POST" enctype="text/plain">
+    <div class="container">
 
-        <select class="container form-select form-select-lg btn-light mb-3" name="artType"aria-label=".form-select-lg example">
-          <option selected>Select Art Field:</option>
-          <option value="1">Audio</option>
-          <option value="2">Video</option>
-          <option value="3">Visual</option>
-          <option value="3">Writing</option>
-        </select>
+      <div class="formTitle">
+        <h1 class="formHeader">Submit</h1>
+        </div>
+         <hr>
 
+    <div class="formContainer">
 
-          <br>
-      
-          <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="John Doe">
-          <br>
-        
-          <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="name@example.com">
-          <br>
-          
-          <textarea name="aboutYou" class="form-control" id="aboutYouTextArea" rows="4" placeholder="Bio:"></textarea>
-          <br>
-          
-          <input class="smallTextBox form-control" type="text" name="artTitle" placeholder="Art Title" value="">
-          <br>
-          
-          <textarea name="aboutArt" class="form-control" id="aboutArtTextArea" rows="4" placeholder="About:"></textarea>
-          <br>
+      <div class="themeContainer">
+        <div class="headerDescription">
+          <div class="formSubheader">
+            <h1>Theme</h1> 
+          </div>
+          <h2 class="theme">
+            hom·o·nym
+          </h5>
+          <h6 >
+           <em>noun</em> </h6>
+           <p class="themeDefinition"> each of two or more words having the same spelling or pronunciation whilst having different meanings and origins
+           </p>
+           
+           <p class="themeDescription">
+            In choosing homonym as the theme for the second issue of Vernacular, we want to provide an idea that encourages creative exploration. Once you look past the technical definition, adjacent paths begin to come into focus.  Roads you are now free to mozy, roam, or run. A homonym can be something surprising, misunderstood while still congruent. A singular expression equally belonging in multiple contexts. Camouflage, trompe d'œil, overlapping meanings, polymorphic identities. 
+            <br>
+            <br>
+            Poems, lyrics, or short stories with wordplay, double entendres, various languages? A figure that appears to be one type of object or medium but is, in reality, another? Despite the look, feel, or sound the submissions in this issue should, in some way, be open to interpretation, provide illusion, delusion, or mirage. 
+           </p>
+        </div>
+      </div>
 
-          <input class="form-control-file choose-file-button" type="file" name="chooseFile" value="">
-              
-   
-          <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit">
+      <br>
+      <br>
 
+      <form action="mailto:arielzilist@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <div class= "col-6">
+            <div class="form-group">
+              <select class="selectionForm form-control form-select-lg btn-light-outline mb-3" name="artType"aria-label=".form-select-lg example">
+                <option selected>Select Art Field:</option>
+                <option value="1">Audio</option>
+                <option value="2">Video</option>
+                <option value="3">Visual</option>
+                <option value="3">Writing</option>
+              </select>
+            </div> 
+          </div>
+          <div class= "col-6">
+            <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="email@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6">
+            <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="Jane Doe" required>
+          </div>
+          <div class= "col-6">
+            <input class="smallTextBox form-control" type="text" name="artTitle" placeholder="Title of Piece" value="">
+         </div>
+        </div>
+          <br>
+        <div class="form-row">
+          <div class="col-6">
+            <textarea name="aboutYou" class="form-control" id="aboutYouTextArea" rows="4" placeholder="About the Artist..."></textarea>
+          </div>
+          <div class="col-6">
+            <textarea name="aboutArt" class="form-control" id="aboutArtTextArea" rows="4" placeholder="About the Work..."></textarea>
+          </div>
+        </div>   
+        <br>     
+         <div class="form-row">
+           <div class="col-12 chooseFileSection">
+            <input class="form-control-file choose-file-button" type="file" name="chooseFile" value="" multiple>
+           </div>
+         </div>  
+         <br>
+         <div class="form-row">
+          <div class="col-12">
+            <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit">
+          </div>
+         </div>   
       </form>
-  </div>
 
+      <div class="submissionGuidelinesContainer">
+        <div class="formSubheader">
+          <h1>Submission Guidelines</h1> 
+        </div>
+        <div class="submissionGuidelines">
+          <p>
+          <ol>
+            <li>
+              All pieces must be original work by the artist submitting. Multiple submissions are welcome, as are pieces under consideration by other publications. 
+            </li>
+            <li>
+              Artists can submit multiple mediums, through separate submission forms.
+            </li>
+            <li>
+              Feel free to submit up to five images of visual work, in high-resolution .pdf or .jpeg. 
+            </li>
+            <li>
+              For writing submissions, please denote genre (fiction, nonfiction, poetry, flash fiction, script, or none). They should be less than 5,000 words, with no word count minimum. One piece of longform per submission, and up to three poems. 
+            </li>
+            <li>
+              Video submissions ought to be .mov or .mp4 files, up to three per submission. Please specify the medium you are submitting (dance, short film, performance, etc), as well as information on the videographer and the performers, if any, in the video. 
+            </li>
+            <li>
+              Please submit up to three audio files, in .mp3 format, specifying the medium you are using (vocals, instrument). Each file should have a cover photo attached, which will be used as the visual component of the Vimeo link upon publication. 
+            </li>
+            <li>
+              We encourage interdisciplinary work, and genre-melding. All genre delineations are to speed up the editing process. 
+            </li>
+          </ol>
+        </p>
+        </div>
+      </div>
+  
+  
+  
+
+
+
+
+
+
+    </div>
 
 
     
+    </div>
   </div>
 </div>
 
@@ -98,9 +186,11 @@
     <div id="footer">
       <div class="bottom-container">
         <a class="fab fa-instagram instagramIcon" href="https://www.instagram.com/vernacular_magazine/" target="_blank"></a>
-        <a class="fab fa-kickstarter-k kickstarterIcon" href="https://www.kickstarter.com/projects/vernacularmagchi/vernacular-issue-01" target="_blank"  ></a> 
         <p class="copywriteSignature">© 2020 Designed by Ariel Zilist</p>
     </div>
-     
- </body>
+    
+    
+
+    <script src="js/index.js"></script>
+   </body>
  </html>
