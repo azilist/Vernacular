@@ -1,5 +1,18 @@
+.theme {
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+}
 .themeDefinition {
   font-size: 1rem;
+  text-align: left !important;
+  padding-bottom: 15px;
+}
+
+.themeDescription {
+  text-align: left;
 }
 
 .submissionGuidelinesContainer {
@@ -14,7 +27,7 @@
 }
 
 .themeContainer {
-  padding: 10px 0 50px;
+  padding:0 0 20px;
 }
 
 ol {

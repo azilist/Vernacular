@@ -139,20 +139,24 @@ h5 {
   padding-bottom: 50px;
 }
 /* CAROUSEL CAPTION  */
-
-@media screen and (max-width: 767px) {
-  .carouselCaption1 {
-    padding-bottom: 60px !important;
-  }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 2000px) {
   .carouselCaption1 {
     padding-bottom: 40px !important;
   }
-
-  .carouselCaption2 {
-    padding-bottom: 0 !important;
-    padding-top: 30px !important;
-  }
 }
+
+
+@media screen and (max-width: 767px) {
+  .carouselCaption1 {
+    padding-bottom: 40px !important;
+    padding-right: 30px !important;
+  }
+
+  
+}
+
+@media screen and (max-width: 767px) {
+  .carouselCaption2 {
+   
+    padding-right: 40px !important;
+  }
