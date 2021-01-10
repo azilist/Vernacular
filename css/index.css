@@ -41,8 +41,15 @@ body {
 }
 
 .carousel-caption {
-  width: 80%;
+  width: 82%;
   padding: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-caption {
+    margin: 0 !important;
+    height: 3%;
+  }
 }
 
 @media screen and (max-width: 2000px) {
