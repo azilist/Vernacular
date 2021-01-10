@@ -56,15 +56,15 @@
       <h1 class="formHeader">Inquiries</h1>
       </div>
       <div class="formContainer">
-        <form  action="mailto:arielzilist@gmail.com" method="POST" enctype="text/plain">
+        <form  action="thankYou.html" method="POST" data-netlify="true" name="inquiries" >
       
-          <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="Jane Doe">
+          <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="Jane Doe" required>
           <br>
         
-          <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="name@example.com">
+          <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="name@example.com" required>
           <br>
           
-          <textarea name="message" class="form-control" id="messageTextArea" rows="4" placeholder="Type any message or questions you have for the Vernacular Mag team here..."></textarea>
+          <textarea name="message" class="form-control" id="messageTextArea" rows="4" placeholder="Type any message or questions you have for the Vernacular Mag team here..." required></textarea>
           <br>
           
           <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit">
