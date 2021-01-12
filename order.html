@@ -7,7 +7,7 @@
     <link rel="icon" href="css/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/formStyles.css">
-    <link rel="stylesheet" href="submissions.css">
+    <link rel="stylesheet" href="css/submissions.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway&display=swap" rel="stylesheet">
@@ -71,44 +71,44 @@
       </div>
 
 
-      <form action="thankYou.html" method="POST" data-netlify="true" name="order">
+      <form action="/thankYou.html" method="GET" id="order-form" name="order">
           <div class="form-row">
             <div class= col-6>
-              <input type="text" class="form-control" placeholder="Jane Doe" required>
+              <input type="text" class="form-control" placeholder="Jane Doe" id="name" required>
             </div>
             <div class="col-6">
-              <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="email@example.com" required>
+              <input type="email" name="yourEmail" class="form-control" id="email" placeholder="email@example.com" required>
             </div>
           </div>
           <br>
           <div class="form-row">
             <div class= col-9>
-              <input class="form-control smallTextBox " type="text" name="yourStreetAddress" value="" placeholder="1234 Main St." required>
+              <input class="form-control smallTextBox " type="text" name="yourStreetAddress" id="address" placeholder="1234 Main St." required>
             </div>
             <div class="col">
-              <input class="form-control smallTextBox " type="text" name="yourApartment" value="" placeholder="Apt. #" >
+              <input class="form-control smallTextBox " type="text" name="yourApartment" id="address2" placeholder="Apt. #" >
             </div>
           </div>
            <br>
             <div class="form-row">
               <div class="col-6">
-                <input type="text" class="form-control" placeholder="City" required>
+                <input type="text" class="form-control" placeholder="City" id="city" required>
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="State" required>
+                <input type="text" class="form-control" placeholder="State" id="state" required>
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Zip" required>
+                <input type="text" class="form-control" placeholder="Zip" id="zip" required>
               </div>
             </div>
             <br>
             <div class="form-row">
               <div class="col-6">
-                <input class="form-control smallTextBox " type="text" name="yourCountry" value="" placeholder="Country" required>
+                <input class="form-control smallTextBox " type="text" name="yourCountry" id="country" placeholder="Country" required>
               </div>
               <div class="col-6">
                 <div class="form-check mb-2 mr-sm-2">
-                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck" value="true">
                   <label class="form-check-label" for="inlineFormCheck">
                     Click here if you need shipping outside of the city of Chicago
                   </label>
@@ -139,7 +139,16 @@
         <p class="copywriteSignature">© 2020 Designed by Ariel Zilist</p>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
 
     <script src="js/index.js"></script>   
+
+    <script src="js/forms/orders.js"></script>
    </body>
  </html>

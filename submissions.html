@@ -84,11 +84,11 @@
       <br>
       <br>
 
-      <form action="thankYou.html" method="POST" data-netlify="true" name="submissions">
+      <form action="thankYou.html" method="POST" id="submission-form" enctype="multipart/form-data" name="submissions" >
         <div class="form-row">
           <div class= "col-6">
             <div class="form-group">
-              <select class="selectionForm form-control form-select-lg btn-light-outline mb-3" name="artType"aria-label=".form-select-lg example">
+              <select class="selectionForm form-control form-select-lg btn-light-outline mb-3" id="medium" name="artType"aria-label=".form-select-lg example">
                 <option selected>Select Art Field:</option>
                 <option value="Audio">Audio</option>
                 <option value="Video">Video</option>
@@ -98,15 +98,15 @@
             </div> 
           </div>
           <div class= "col-6">
-            <input type="email" name="yourEmail" class="form-control" id="emailAddress" placeholder="email@example.com" required>
+            <input type="email" name="yourEmail" class="form-control" id="email" placeholder="email@example.com" required>
           </div>
         </div>
         <div class="form-row">
           <div class="col-6">
-            <input class="form-control smallTextBox " type="text" name="yourName" value="" placeholder="Jane Doe" required>
+            <input class="form-control smallTextBox " type="text" name="yourName" id="name" placeholder="Jane Doe" required>
           </div>
           <div class= "col-6">
-            <input class="smallTextBox form-control" type="text" name="artTitle" placeholder="Title of Piece" value="">
+            <input class="smallTextBox form-control" type="text" name="artTitle" id="artTitle" placeholder="Title of Piece" value="">
          </div>
         </div>
           <br>
@@ -121,13 +121,14 @@
         <br>     
          <div class="form-row">
            <div class="col-12 chooseFileSection">
-            <input class="form-control-file choose-file-button" type="file" name="chooseFile" value="" multiple>
+            <input class="form-control-file choose-file-button" type="file" id="fileUpload" name="chooseFile" multiple>
            </div>
          </div>  
          <br>
          <div class="form-row">
           <div class="col-12">
-            <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit">
+            <input class="SubmitButton form-control" type="submit"  name="submit" value="Submit" id="submit-btn">
+
           </div>
          </div>   
       </form>
@@ -169,30 +170,21 @@
   
 
 
-
-
-
-
-    </div>
-
-
-    
-    </div>
-  </div>
-</div>
-
-
-      
-     
-
     <div id="footer">
       <div class="bottom-container">
         <a class="fab fa-instagram instagramIcon" href="https://www.instagram.com/vernacular_magazine/" target="_blank"></a>
         <p class="copywriteSignature">© 2020 Designed by Ariel Zilist</p>
     </div>
     
-    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
     <script src="js/index.js"></script>
+
+    <script src="js/forms/submissions.js"></script>
    </body>
  </html>
