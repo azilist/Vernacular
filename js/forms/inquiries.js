@@ -1,8 +1,9 @@
 const $inquiries = document.querySelector("#inquiries-form");
-console.log(db);
+const $submitBtn = document.querySelector("#submit-btn");
 
 $inquiries.addEventListener("submit", (e) => {
   e.preventDefault();
+  $submitBtn.disabled = true;
   const timestamp = new Date();
   submission = {
     form: "inquiries",

@@ -1,7 +1,9 @@
 const $order = document.querySelector("#order-form");
+const $submitBtn = document.querySelector("#submit-btn");
 
 $order.addEventListener("submit", (e) => {
   e.preventDefault();
+  $submitBtn.disabled = true;
   const timestamp = new Date();
   const submission = {
     form: "order",
