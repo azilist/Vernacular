@@ -40,7 +40,7 @@ $submission.addEventListener("submit", async (e) => {
           submission.files.push(data.url);
         });
     }
-    db.collection("form-submissions")
+    db.collection("submissions")
       .add(submission)
       .then(function (docRef) {
         console.log("Document written with ID: ", docRef.id);

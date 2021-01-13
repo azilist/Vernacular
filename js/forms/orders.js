@@ -21,7 +21,7 @@ $order.addEventListener("submit", (e) => {
     comments: document.querySelector("#messageTextArea").value,
     timestamp,
   };
-  db.collection("form-submissions")
+  db.collection("orders")
     .add(submission)
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);

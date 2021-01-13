@@ -12,7 +12,7 @@ $inquiries.addEventListener("submit", (e) => {
     message: document.querySelector("#messageTextArea").value,
     timestamp,
   };
-  db.collection("form-submissions")
+  db.collection("inquiries")
     .add(submission)
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);
