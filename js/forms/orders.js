@@ -2,6 +2,7 @@ const $order = document.querySelector("#order-form");
 
 $order.addEventListener("submit", (e) => {
   e.preventDefault();
+  const timestamp = new Date();
   const submission = {
     form: "order",
     name: document.querySelector("#name").value,
@@ -16,8 +17,9 @@ $order.addEventListener("submit", (e) => {
     },
     outsideChicago: document.querySelector("#inlineFormCheck").value,
     comments: document.querySelector("#messageTextArea").value,
+    timestamp,
   };
-  db.collection("orders")
+  db.collection("form-submissions")
     .add(submission)
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);

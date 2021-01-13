@@ -3,13 +3,15 @@ console.log(db);
 
 $inquiries.addEventListener("submit", (e) => {
   e.preventDefault();
+  const timestamp = new Date();
   submission = {
     form: "inquiries",
     name: document.querySelector("#name").value,
     email: document.querySelector("#email").value,
     message: document.querySelector("#messageTextArea").value,
+    timestamp,
   };
-  db.collection("inquiries")
+  db.collection("form-submissions")
     .add(submission)
     .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);

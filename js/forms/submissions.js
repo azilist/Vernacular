@@ -6,6 +6,7 @@ const $submitBtn = document.querySelector("#submit-btn");
 $submission.addEventListener("submit", async (e) => {
   e.preventDefault();
   $submitBtn.disabled = true;
+  const timestamp = new Date();
 
   const submission = {
     form: "submissions",
@@ -16,6 +17,7 @@ $submission.addEventListener("submit", async (e) => {
     artistBio: document.querySelector("#aboutYouTextArea").value,
     artInfo: document.querySelector("#aboutArtTextArea").value,
     files: [],
+    timestamp,
   };
   //add disabled to btn while
 
@@ -38,7 +40,7 @@ $submission.addEventListener("submit", async (e) => {
           submission.files.push(data.url);
         });
     }
-    db.collection("submissions")
+    db.collection("form-submissions")
       .add(submission)
       .then(function (docRef) {
         console.log("Document written with ID: ", docRef.id);
