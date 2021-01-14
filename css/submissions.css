@@ -27,9 +27,14 @@ h6 {
 }
 
 .themeContainer {
-  padding:0 0 20px;
+  padding: 0 0 20px;
 }
 
 ol {
   line-height: 1.5;
+}
+
+.fileSizeDescription {
+  line-height: 1.2;
+  font-size: 1.1rem;
 }

@@ -1,0 +1,23 @@
+.thankYouContainer {
+  text-align: center;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 575px) {
+  .thankYouImg {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .thankYouImg {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .thankYouImg {
+    width: 70%;
+  }
+}

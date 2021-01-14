@@ -125,7 +125,8 @@ body {
 .instagramIcon {
   font-size: 1.3rem;
   color: black;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
   width: 100%;
   margin: auto;
 }
@@ -136,10 +137,3 @@ body {
   text-decoration: none;
 }
 
-/* THANK YOU PLACE HOLDER */
-
-.thankYouContainer {
-  height: 700px;
-  text-align: center;
-  margin: auto;
-}

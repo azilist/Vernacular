@@ -1,3 +1,8 @@
+.aboutContentContainer {
+  max-width: 600px !important;
+  margin: auto !important;
+}
+
 @media screen and (max-width: 2000px) {
   .headerParagraph {
     font-size: 8rem;
@@ -103,7 +108,7 @@ h5 {
 
 .bioImg {
   border-radius: 100%;
-  width: 93%;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {

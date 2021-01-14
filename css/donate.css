@@ -1,10 +1,14 @@
 .container {
   font-family: "Crimson Text", serif;
   font-size: 25px;
-  margin: 0 auto !important;
-  max-width: 600px !important;
+  /* margin: 0 auto !important; */
+  /* max-width: 600px !important; */
 }
-
+.donateContentContainer {
+  max-width: 600px !important;
+  text-align: center !important;
+  margin: auto !important;
+}
 .donateFormTitle {
   padding-bottom: 10px;
 }
