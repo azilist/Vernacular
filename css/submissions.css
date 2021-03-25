@@ -20,6 +20,15 @@ h6 {
   padding: 60px 0;
 }
 
+.submissionGuidelines {
+  font-family: "Crimson Text", serif;
+}
+
+.submissionInstructionContainer {
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
+}
+
 .formSubheader {
   font-family: "Crimson Text", serif;
   margin: 20px 0;
